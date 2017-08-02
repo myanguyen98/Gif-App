@@ -13,7 +13,12 @@
       <!-- Button triggers new movie to be added -->
       <input id="add-gif" type="submit" value="Add a Hero">
 </form>
-<div class="btn" id="buttons-view"></div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="btn" id="buttons-view"></div>
+  </div>
+</div>
+
 <div id="gif-display"></div>
 
 	<!--API KEY: api_key=dc6zaTOxFJmzC -->
@@ -47,6 +52,7 @@
 	      method: 'GET'
 	    }).done(function(response) {
 	      console.log(response);
+	      
 	      
 	      //$('#test').attr("src",response.data[0].images.downsized.url);
 	      //$("body").append('<img src="'+response.data[9].images.downsized.url+'">');
